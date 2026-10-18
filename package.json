@@ -4,6 +4,7 @@
   "version": "0.2.1",
   "description": "A real-time intelligence console for planet Earth — photorealistic 3D globe, live aircraft/ships/satellites/earthquakes/CCTV, and hands-free voice control. Runs in a browser.",
   "type": "module",
+  "main": "electron/main.js",
   "license": "MIT",
   "author": "Bilawal Sidhu",
   "homepage": "https://github.com/bilawalsidhu/gods-eye-view#readme",
@@ -32,6 +33,7 @@
     "visualization"
   ],
   "scripts": {
+    "start": "electron .",
     "doctor": "node scripts/setup-doctor.mjs",
     "format": "node scripts/format.mjs --write",
     "format:check": "node scripts/format.mjs --check",
@@ -70,6 +72,7 @@
     "satellite.js": "^6.0.2"
   },
   "devDependencies": {
+    "electron": "44.9.0",
     "prettier": "3.9.6",
     "puppeteer": "^25.10.0",
     "sharp": "^0.35.4",

@@ -141,6 +141,11 @@ npm run dev
 Open **`http://localhost:4173`**. Choose **Live Contacts**, **Space Missions**,
 **Environmental**, or **Explore Manually** from the first-run panel.
 
+**Desktop window instead of a browser tab:** run `npm start`. It starts the
+same dev server on `127.0.0.1` (port 4173, or a free one if that is taken) and
+opens it in an Electron window; closing the window stops the server. Links to
+other sites open in your normal browser.
+
 <details>
 <summary>Startup performance</summary>
 
